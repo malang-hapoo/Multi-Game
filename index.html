@@ -3,12 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multi-Game</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #444;
+        }
+
+        .container {
+            max-width: 1920px;
+            min-width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+
+            display: flex;
+            justify-content: space-between;
+
+            height: 50px;
+        }
+
+        .menu {
+            align-content: center;
+        }
+
+        .submenu {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            align-content: center;
+
+            display: inline-block;
+
+            margin: 0 20px 0 20px;
+            padding: 7px;
+
+            background-color: #eee;
+        }
+
+        .main-contents {
+            display: none;
+
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+        }
+        .HOME {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="animals/dog.html" frameborder="0" width="600" height="400"></iframe>
-    <iframe src="animals/cat.html" frameborder="0" width="600" height="400"></iframe>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                멀티게임과
+            </div>
+            <div class="menu">
+                <div class="submenu">
+                    HOME
+                </div>│
+                <div class="submenu">
+                    LECTURES
+                </div>│
+                <div class="submenu">
+                    WORKS
+                </div>│
+                <div class="submenu">
+                    CONTACT
+                </div>
+            </div>
+            <div class="logo">
+                숭실대학교
+            </div>
+        </header>
+        <main>
+            <div class="main-contents HOME">
+                <img src="bg_intro04.png" alt="">
+            </div>
+            <div class="main-contents LECTURES">
+                <img src="bg_intro04.png" alt="">
+            </div>
+            <div class="main-contents WORKS">
+                <img src="bg_intro04.png" alt="">
+            </div>
+            <div class="main-contents CONTACT">
+                <img src="bg_intro04.png" alt="">
+            </div>
+        </main>
+    </div>
 </body>
-
 </html>
-
