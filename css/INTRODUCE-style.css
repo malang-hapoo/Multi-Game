@@ -1,0 +1,137 @@
+.main-contents.INTRODUCE {
+    background: #222;
+}
+
+.INTRODUCE>.contents-header {
+    background-color: #111;
+    color: #fff;
+
+    width: 100%;
+    height: 500px;
+
+    align-content: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.INTRODUCE>.contents-header>.contents-title {
+    font-size: 3.5em;
+    margin: 0.5em;
+}
+
+.INTRODUCE>.contents-header>.contents-subtitle {
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+}
+
+.INTRODUCE>.contents-section-1 {
+    background-color: #eee;
+    color: #fff;
+
+    width: 100%;
+    height: 1100px;
+    position: relative;
+}
+
+.INTRODUCE .department {
+    background-color: #555;
+
+    width: 90%;
+    height: 900px;
+
+    overflow: hidden;
+
+    position: relative;
+    left: 5%;
+}
+
+.INTRODUCE .department-wrap {
+    width: 200%;
+    display: flex;
+    background-color: #ccc;
+
+    transition: 1s;
+}
+
+.INTRODUCE .department-scroll {
+    flex: 1;
+
+    align-content: center;
+    text-align: center;
+
+    display: inline-block;
+
+    background-color: #ddd;
+    color: #000;
+
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+}
+
+.INTRODUCE .department-scroll>h1 {
+    font-size: 3em;
+    margin: auto;
+    margin-top: -2em;
+}
+
+.INTRODUCE .department-scroll>p {
+    font-size: 1.5em;
+    margin: 1.5em;
+}
+
+.INTRODUCE .department-menu {
+    display: flex;
+
+    position: relative;
+    left: 40%;
+
+    width: 20%;
+    height: 150px;
+}
+
+.INTRODUCE .department-submenu {
+    z-index: 2;
+
+    flex: 1 0 50%;
+
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+
+    position: relative;
+    height: 80px;
+    min-width: 150px;
+    top: 35px;
+
+    transition: 1s;
+
+    cursor: pointer;
+}
+
+.INTRODUCE .department-submenu::after {
+    content: '';
+
+    position: absolute;
+    top: 70px;
+    left: 5%;
+
+    width: 90%;
+    height: 5px;
+
+    background-color: #ddd;
+    border-radius: 5px;
+
+    transition: 1s;
+}
+
+.INTRODUCE .department-submenu:hover::after {
+    background-color: #999;
+}
+
+.INTRODUCE .department-submenu.active::after {
+    background-color: #444;
+}
