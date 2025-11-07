@@ -1,4 +1,4 @@
-let currentIndex = 0; // 현재 페이지 인덱스
+let currentIndex = 0;
 
 function showContent(index) {
     const warp = document.querySelector('.main-warp');
@@ -7,11 +7,11 @@ function showContent(index) {
     // 이동 거리 계산
     const distance = Math.abs(index - currentIndex);
 
-    // 거리 비례 트랜지션 시간 (0.6초 × 거리)
-    const duration = 0.5 * distance;
+    // 거리 비례 트랜지션 시간 (1초 + 0.5 × 거리)
+    const duration = 1 + 0.5 * (distance - 1);
 
     // transition 시간 동적으로 설정
-    warp.style.transition = `transform ${duration}s ease`;
+    warp.style.transition = `${duration}s`;
 
     // 슬라이드 이동
     warp.style.transform = `translateX(-${index * 100}%)`;

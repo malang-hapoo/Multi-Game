@@ -16,7 +16,7 @@
 
         .container {
             max-width: 1920px;
-            min-width: 950px;
+            min-width: 1080px;
             margin: auto;
 
         }
@@ -34,9 +34,11 @@
         }
 
         .submenu {
-            position: relative; /* ::after 위치 기준 */
+            position: relative; 
+
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 1.5rem;
+
             align-content: center;
 
             display: inline-block;
@@ -48,22 +50,39 @@
 
         .submenu::after {
             content: '';
+
             position: absolute;
             bottom: 5px;
             left: 50%;
             transform: translateX(-50%);
+
             width: 0%;            
             height: 20px;
-            background-color: #3cc13b;
+
             border-radius: 5px;
+
             opacity: 0;
+
             transition: 0.3s;
         }
-        
-        /* active 상태 */
+        .submenu:hover::after {
+            z-index: 1;
+            background-color: #22c3c9;
+
+            width: 100%;
+            opacity: 30%;
+        }
+
         .submenu.active::after {
+            background-color: #3cc13b;
             width: 100%;
             opacity: 30%
+        }
+
+        .logo {
+            margin: 10px 20px;
+
+            border: 1px solid black;
         }
 
         main {
@@ -80,8 +99,8 @@
 
         .main-warp {
             display: flex;
-            width: 400%; /* 콘텐츠 4개니까 100% × 4 */
-            transition: transform 0.6s ease;
+            width: 400%; 
+            transition: 1s;
         }
 
         .main-contents {
@@ -135,7 +154,7 @@
                 </div>
             </div>
             <div class="logo">
-                숭실대학교
+                <img src="https://ssu.ac.kr/wp-content/themes/SSUMainSiteV2/assets/images/logo.png" alt="">
             </div>
         </header>
         <main>
@@ -155,6 +174,6 @@
             </div>
         </main>
     </div>
-    <script src="toggle.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
