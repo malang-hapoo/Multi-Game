@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: #222;
+        }
+
+        .HOME .department-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 500px;
+            margin: 50px auto;
+            background-color: #333;
+        }
+
+        .HOME .department-stretch {
+            flex: 1;
+            background-color: #ddd;
+            color: #000;
+            transition: all 0.6s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .HOME .department-stretch:hover {
+            flex-grow: 3;
+            background-color: #22c3c9;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="HOME">
+        <div class="department-wrap">
+            <div class="department-stretch">멀티미디어</div>
+            <div class="department-stretch">게임</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -15,29 +15,38 @@
         }
 
         .container {
+            position: relative;
             max-width: 1920px;
-            min-width: 1080px;
+            min-width: 1200px;
             margin: auto;
 
         }
 
         .header {
-
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
-            height: 50px;
+            position: absolute; 
+            top: 0;
+            left: 0;
+
+            height: 100px;
+            width: 100%;
+
+            z-index: 10;
         }
 
         .menu {
             align-content: center;
+            color: white;
         }
 
         .submenu {
             position: relative; 
 
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
 
             align-content: center;
 
@@ -80,16 +89,30 @@
         }
 
         .logo {
+            
             margin: 10px 20px;
 
-            border: 1px solid black;
+            color: #eee;
+            font-size: 30px;
+        }
+        .ssu-logo {
+            width: 150px;
+            height: 40px;
+        }
+        .ssugli-logo {
+            width: 100px;
+            height: 40px;
+        }
+        .multi-game-logo {
+            width: 250px;
+            height: 40px;
+
         }
 
         main {
-            z-index: -1;
+            z-index: 0;
 
             position: relative;
-            top: -50px;
 
             overflow: hidden;
             width: 100%;
@@ -97,27 +120,160 @@
             background: #222;
         }
 
-        .main-warp {
+        .main-wrap {
             display: flex;
-            width: 400%; 
-            transition: 1s;
+            width: 100%; 
         }
 
         .main-contents {
             flex: 1 0 100%;
 
-            height: 1000px;
+            height: 2000px;
 
-            display: flex;
 
-            justify-content: center;
-            align-items: center;
+            justify-content: top;
+            align-items: top;
+            align-content: top;
 
             transition: 1s;
         }
 
         .main-contents.HOME {
-            background: linear-gradient(#fff, rgb(63, 63, 114));
+            background: #222;
+        }
+
+        .HOME > .contents-header {
+            background-color: #111;
+            color: #fff;
+
+            width: 100%;
+            height: 500px;
+
+            align-content: center;
+            text-align: center;
+
+            position: relative;
+        }
+
+        .HOME > .contents-header > .contents-title {
+            font-size: 3.5em; 
+            margin: 0.5em;
+        }
+
+        .HOME > .contents-header > .contents-subtitle {
+            font-size: 1.5em; 
+            letter-spacing: 0.5em;
+        }
+        
+        .HOME > .contents-section-1 {
+            background-color: #eee;
+            color: #fff;
+
+            width: 100%;
+            height: 1100px;
+            position: relative;
+        }
+
+        .HOME .department {
+            background-color: #555;
+
+            width: 90%;
+            height: 900px;
+            
+            overflow: hidden;
+
+            position: relative;
+            left: 5%;
+        }
+
+        .HOME .department-wrap {
+            width: 200%;
+            display: flex;
+            background-color: #ccc;
+
+            transition: 1s;
+        }
+
+        .HOME .department-scroll {
+            flex: 1;
+
+            align-content: center;
+            text-align: center;
+
+            display: inline-block;
+
+            background-color: #ddd;
+            color: #000;
+
+            width: 100%;
+            height: 1000px;
+            box-sizing: border-box;
+        }
+
+        .HOME .department-scroll > h1 {
+            font-size: 3em;
+            margin: auto;
+            margin-top: -2em;
+        }
+
+        .HOME .department-scroll > p {
+            font-size: 1.5em;
+            margin: 1.5em;
+        }
+
+        .HOME .department-menu {
+            display: flex;
+
+            position: relative;
+            left: 40%;
+
+            width: 20%;
+            height: 150px;
+        }
+
+        .HOME .department-submenu {
+            z-index: 2;
+
+            flex: 1 0 50%;
+
+            color: #000;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            align-content: center;
+            
+            position: relative;
+            height: 80px;
+            min-width: 150px;
+            top: 35px;
+
+            transition: 1s;
+
+            cursor: pointer;
+        }
+
+        .HOME .department-submenu::after {
+            content: '';
+
+            position: absolute;
+            top: 70px;
+            left: 5%;
+
+            width: 90%;
+            height: 5px;
+
+            background-color: #ddd;
+            border-radius: 5px;
+
+            transition: 1s;
+        }
+
+        .HOME .department-submenu:hover::after {
+            background-color: #999;
+        }
+
+        .HOME .department-submenu.active::after {
+            background-color: #444;
         }
         
         .main-contents.LECTURES {
@@ -137,7 +293,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                멀티게임과
+                <img src="https://gfi.ssu.ac.kr/pub/images/logo_bw.svg" class="multi-game-logo">
             </div>
             <div class="menu">
                 <div class="submenu HOME active" onclick="showContent(0)">
@@ -154,13 +310,81 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="https://ssu.ac.kr/wp-content/themes/SSUMainSiteV2/assets/images/logo.png" alt="">
+                <img src="https://gfi.ssu.ac.kr/pub/images/logo_bw.svg" class="ssu-logo">
+                <img src="https://gfi.ssu.ac.kr/pub/images/logo_b.svg" class="ssugli-logo">
             </div>
         </header>
         <main>
-            <div class="main-warp">
+            <div class="main-wrap">
                 <div class="main-contents HOME">
-
+                    <div class="contents-header">
+                        <h1 class="contents-title">멀티미디어 & 게임</h1>
+                        <p class="contents-subtitle">
+                            기술과 예술이 만나는 곳, 우리는 디지털 세상을 창조합니다 !
+                        </p>
+                    </div>
+                    <div class="contents-section-1">
+                        <div class="department-menu">
+                            <div class="department-submenu" onclick="scrollDepartment(0)">
+                                멀티미디어
+                            </div>
+                            <div class="department-submenu" onclick="scrollDepartment(1)">
+                                게임
+                            </div>
+                        </div>
+                        <div class="department">
+                            <div class="department-wrap">
+                                <span class="department-scroll">
+                                    <h1>멀티미디어</h1>
+                                    <p>
+                                        디지털 시대의 핵심은 콘텐츠입니다. 그리고 그 중심에는 시각, 청각, 영상, 인터랙션을 아우르는 멀티미디어 기술이                               있습니다. <br>
+                                        멀티미디어 학과는 이러한 시대적 흐름에 발맞춰, 예술적 감성과 첨단 기술을 융합하여 새로운 디지털 콘텐츠를 창조하는 인재를 양성하는 학과입니다.
+                                    </p>
+                                    <p>
+                                        본 학과에서는 영상 제작, 그래픽 디자인, 애니메이션, 사운드 디자인, 인터랙티브 콘텐츠, UI/UX 디자인 등 다양한                                분야를 실습 중심으로 배우며,<br>
+                                        학생들은 프로젝트 기반 수업을 통해 실제 산업 현장과 유사한 경험을 쌓아 나갑니다.
+                                    </p>
+                                    <p>
+                                        또한, 미디어 아트와 소프트웨어 기술의 융합을 통해 창의적인 아이디어를 실현하는 능력을 키우고, 팀 프로젝트와                                 포트폴리오 제작을 통해<br>
+                                        졸업 후 방송·영상 산업, 광고 디자인, 디지털 콘텐츠 개발, UI/UX 분야, IT 스타트업 등 다양한 진로로 나아갈 수 있도록 돕습니다.
+                                    </p>
+                                    <p>
+                                        멀티미디어 학과는 기술만을 배우는 곳이 아닙니다.<br>
+                                        이곳은 감성을 기술로, 아이디어를 현실로 구현하는 공간이며,<br>
+                                        디지털 시대의 예술가이자 창작자로서 성장하는 첫걸음이 되는 곳입니다.
+                                    </p>
+                                    <p>
+                                        당신의 상상을 빛과 소리, 영상과 코드로 구현해보세요.<br>
+                                        멀티미디어 학과는 그 여정을 함께할 준비가 되어 있습니다.
+                                    </p>
+                                </span>
+                                <span class="department-scroll">
+                                    <h1>게임</h1>
+                                    <p>
+                                        오늘날 게임은 단순한 오락을 넘어, 문화와 예술, 기술이 융합된 종합 콘텐츠 산업으로 자리 잡고 있습니다.<br>
+                                        게임학과는 이처럼 빠르게 진화하는 디지털 시대에 발맞춰, 창의적인 사고와 기술 역량을 겸비한 게임 전문가를 양성하는 학과입니다.
+                                    </p>
+                                    <p>
+                                        본 학과에서는 게임 기획, 스토리텔링, 그래픽 디자인, 2D·3D 애니메이션, 사운드, 프로그래밍, 게임엔진 운용(Unity/Unreal) 등
+                                        게임 제작의 전 과정을 실무 중심으로 교육합니다.<br>
+                                        학생들은 팀 프로젝트와 포트폴리오 제작을 통해 실제 게임 개발 프로세스를 경험하며, 산업 현장에서 바로 활용할 수 있는 실력을 갖추게 됩니다.
+                                    </p>
+                                    <p>
+                                        특히, 게임의 본질인 「재미」와 「몰입」을 설계하는 방법을 배우며, 동시에 사용자 경험(UX)과 인터랙션 설계까지 폭넓은 시각을 기릅니다.<br>
+                                        이를 통해 졸업 후에는 게임 개발사, 콘텐츠 기업, VR·AR 산업, 메타버스 기획 등 다양한 진로 분야에서 활약할 수 있습니다.
+                                    </p>
+                                    <p>
+                                        게임학과는 단순히 코드를 배우는 곳이 아닙니다.<br>
+                                        이곳은 상상으로 세계를 만들고, 이야기로 사람을 움직이며, 기술로 그 세계를 구현하는 창조의 공간입니다.
+                                    </p>
+                                    <p>
+                                        게임을 좋아하나요? 그렇다면 이제는 직접 만드는 사람이 되어보세요. <br>
+                                        게임학과는 여러분의 아이디어가 현실이 되는 그 순간을 함께합니다.
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-contents LECTURES">
 
