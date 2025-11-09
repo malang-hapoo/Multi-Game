@@ -1,14 +1,17 @@
 .main-contents.HOME {
     background: #222;
+    height: 5000px;
 }
 
 .HOME>.contents-header {
-    background-image: url(../src/images/bg.png);
+    background-image: url(../src/images/bg_.png);
     background-size: cover;
-    color: #eee;
+    background-position-x: center;
+    background-position-y: bottom;
+    color: #fff;
 
     width: 100%;
-    height: 1000px;
+    height: 1200px;
 
     align-content: center;
     text-align: center;
@@ -17,15 +20,87 @@
 }
 
 .HOME>.contents-header>.contents-title {
+    
     font-size: 3.5em;
     margin: 0.5em;
 
-    text-shadow: 0 0 3px #aff;
+    position: relative;
+    top: -50px;
+
+    text-shadow: 0 0 2px #000;
 }
 
 .HOME>.contents-header>.contents-subtitle {
     font-size: 1.5em;
     letter-spacing: 0.2em;
     line-height: 2em;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px #000;
+    
+    position: relative;
+    top: -50px;
+}
+
+.HOME>.contents-section-1 {
+    background-image: linear-gradient(180deg,#000 0%,#ddd 100%);
+    background-size: cover;
+    color: #fff;
+
+    width: 100%;
+    height: 300px;
+
+    align-content: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.HOME>.contents-section-2 {
+    background-color: #ddd;
+    color: #000;
+
+    width: 100%;
+    height: 1200px;
+
+
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.HOME>.contents-section-2>h1 {
+
+    padding: 4rem;
+    
+    font-size: 3.5em;
+}
+
+.HOME>.contents-section-2 img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+
+    position: relative;
+}
+
+.HOME>.contents-section-2>.sec-2-wrap {
+    max-width: 1600px;
+    width: 80%;
+    display: flex;
+    
+    background-color: #777;
+    position: relative;
+
+}
+
+.HOME>.contents-section-2>.sec-2-wrap-contents {
+
+    display: inline-block;
+
+    flex: 1;
+
+    background-color: #555;
+    border: 1px solid black;
+
+    position: relative;
 }
