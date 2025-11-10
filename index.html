@@ -28,16 +28,16 @@
                 <img src="https://gfi.ssu.ac.kr/pub/images/logo_bw.svg" class="multi-game-logo">
             </div>
             <div class="menu">
-                <div class="submenu HOME active" onclick="showContent(0)">
+                <div class="submenu HOME active" onclick="showContentDelay(0,0)">
                     HOME
                 </div>│
-                <div class="submenu INTRODUCE" onclick="showContent(1)">
+                <div class="submenu INTRODUCE" onclick="showContentDelay(1,0)">
                     INTRODUCE
                 </div>│
-                <div class="submenu WORKS" onclick="showContent(2)">
+                <div class="submenu WORKS" onclick="showContentDelay(2,0)">
                     WORKS
                 </div>│
-                <div class="submenu CONTACT" onclick="showContent(3)">
+                <div class="submenu CONTACT" onclick="showContentDelay(3,0)">
                     CONTACT
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <div class="contents-header">
                         <h1 class="contents-title">
                             기술과 예술이 만나는 곳, <br>
-                            우리는 디지털 세상을 창조합니다 ! <br>
+                            저희는 디지털 세상을 창조합니다 ! <br>
                         </h1>
                         <p class="contents-subtitle">
                             저희는 디지털 콘텐츠 제작의 전 과정을 직접 경험하며, <br>
@@ -66,23 +66,38 @@
                         </p>
                     </div>
                     <div class="contents-section-1">
-                        
+                        <h1 class="contents-title">
+                            기술과 예술의 가교가 되는 멀티미디어, <br>
+                            저희는 빛과 소리로 세상을 다시 쓰고 있습니다.
+                        </h1>
+                        <p class="contents-subtitle">
+                            디지털 도구를 활용해 콘텐츠를 기획하고, <br>
+                            현실을 확장하는 창조적 경험을 만들어냅니다.
+                        </p>
+                        <div class="link-button" onclick="showContentDelay(1,0.5); scrollDepartment(0); scrollDistanceDelay(300, 0);">
+                            <div class="link-text">
+                                멀티미디어 학과
+                            </div>
+                            <div class="link-icon">
+                                →
+                            </div>
+                        </div>
                     </div>
                     <div class="contents-section-2">
-                        <h1>멀티미디어</h1>
-                        <div class="sec-2-wrap">
-                            <div class="sec-2-wrap-contents">
-                                <img src="./src/images/multi.jpg">
+                        <h1 class="contents-title">
+                            세상을 상상하고 구현하는 게임, <br>
+                            저희는 아이디어를 현실로 만드는 창작자입니다.
+                        </h1>
+                        <p class="contents-subtitle">
+                            기획부터 디자인, 프로그래밍, 엔진 활용까지 <br>
+                            몰입과 감동을 주는 콘텐츠를 직접 만들어냅니다.
+                        </p>
+                        <div class="link-button" onclick="showContentDelay(1,0.5); scrollDepartment(1); scrollDistanceDelay(300, 0);">
+                            <div class="link-text">
+                                게임과
                             </div>
-                            <div class="sec-2-wrap-contents">
-                                생각을 구체화하는 기획, 상상을 시각화하는 디자인,
-                                그리고 상호작용을 구현하는 개발까지 우리는 모든 디지털 창작의 여정을 함께하며,
-                                한 편의 콘텐츠가 완성되기까지의 모든 순간을 직접 체험합니다.
-                            
-                                사용자 경험을 고려한 콘텐츠 기획, 감성과 트렌드를 반영한 시각 디자인,
-                                그리고 인터랙티브한 기능을 구현하는 개발 단계까지
-                                우리는 디지털 창작의 모든 흐름을 실습 기반으로 익히며,
-                                실제 산업 수준의 프로젝트를 완성해냅니다.
+                            <div class="link-icon">
+                                →
                             </div>
                         </div>
                     </div>
@@ -94,7 +109,7 @@
                     <div class="contents-header">
                         <h1 class="contents-title">멀티미디어 & 게임</h1>
                         <p class="contents-subtitle">
-                            기술과 예술이 만나는 곳, 우리는 디지털 세상을 창조합니다 !
+                            기술과 예술이 만나는 곳, 저희는 디지털 세상을 창조합니다 !
                         </p>
                     </div>
                     <div class="contents-section-1">
