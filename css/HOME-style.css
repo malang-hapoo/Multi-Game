@@ -27,14 +27,14 @@
     position: relative;
     top: -50px;
 
-    text-shadow: 0 0 2px #000;
+    text-shadow: 0 0 3px #000;
 }
 
 .HOME .contents-subtitle {
     font-size: 1.5em;
     letter-spacing: 0.2em;
     line-height: 2em;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 3px #000;
     
     position: relative;
     top: -50px;
@@ -112,7 +112,7 @@
 
 .HOME>.contents-section-2>.link-button {
     margin: auto;
-    width: 7rem;
+    width: 9rem;
     height: 3.5rem;
 
     border: 2px solid #fff;

@@ -9,7 +9,7 @@ body {
 
 .container {
     position: relative;
-    min-width: 1200px;
+    min-width: 1300px;
     margin: auto;
 
 }
@@ -94,16 +94,19 @@ body {
 
 .ssu-logo {
     width: 130px;
+    max-width: 80%;
     height: 40px;
 }
 
 .ssugli-logo {
     width: 100px;
+    max-width: 80%;
     height: 40px;
 }
 
 .multi-game-logo {
     width: 230px;
+    max-width: 80%;
     height: 40px;
 
 }
@@ -127,11 +130,13 @@ main {
 .main-contents {
     flex: 1 0 100%;
 
-
-
     justify-content: top;
     align-items: top;
     align-content: top;
 
     transition: 1s;
+}
+
+.main-contents.hidden {
+    display: none;
 }

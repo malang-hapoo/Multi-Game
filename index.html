@@ -28,16 +28,16 @@
                 <img src="https://gfi.ssu.ac.kr/pub/images/logo_bw.svg" class="multi-game-logo">
             </div>
             <div class="menu">
-                <div class="submenu HOME active" onclick="showContentDelay(0,0)">
+                <div class="submenu HOME active" onclick="hideContentDelay(0,0)">
                     HOME
                 </div>│
-                <div class="submenu INTRODUCE" onclick="showContentDelay(1,0)">
+                <div class="submenu INTRODUCE" onclick="hideContentDelay(1,0)">
                     INTRODUCE
                 </div>│
-                <div class="submenu WORKS" onclick="showContentDelay(2,0)">
+                <div class="submenu WORKS" onclick="hideContentDelay(2,0)">
                     WORKS
                 </div>│
-                <div class="submenu CONTACT" onclick="showContentDelay(3,0)">
+                <div class="submenu CONTACT" onclick="hideContentDelay(3,0)">
                     CONTACT
                 </div>
             </div>
@@ -54,7 +54,7 @@
                 
                 <!-- HOME -->
 
-                <div class="main-contents HOME">
+                <div class="main-contents HOME hidden">
                     <div class="contents-header">
                         <h1 class="contents-title">
                             기술과 예술이 만나는 곳, <br>
@@ -74,7 +74,7 @@
                             디지털 도구를 활용해 콘텐츠를 기획하고, <br>
                             현실을 확장하는 창조적 경험을 만들어냅니다.
                         </p>
-                        <div class="link-button" onclick="showContentDelay(1,0.5); scrollDepartment(0); scrollDistanceDelay(300, 0);">
+                        <div class="link-button" onclick="hideContentDelay(1,0.5); scrollDepartment(0); scrollDistanceDelay(300, 0);">
                             <div class="link-text">
                                 멀티미디어 학과
                             </div>
@@ -92,9 +92,9 @@
                             기획부터 디자인, 프로그래밍, 엔진 활용까지 <br>
                             몰입과 감동을 주는 콘텐츠를 직접 만들어냅니다.
                         </p>
-                        <div class="link-button" onclick="showContentDelay(1,0.5); scrollDepartment(1); scrollDistanceDelay(300, 0);">
+                        <div class="link-button" onclick="hideContentDelay(1,0.5); scrollDepartment(1); scrollDistanceDelay(300, 0);">
                             <div class="link-text">
-                                게임과
+                                게임 학과
                             </div>
                             <div class="link-icon">
                                 →
@@ -107,78 +107,297 @@
 
                 <div class="main-contents INTRODUCE">
                     <div class="contents-header">
-                        <h1 class="contents-title">멀티미디어 & 게임</h1>
-                        <p class="contents-subtitle">
-                            기술과 예술이 만나는 곳, 저희는 디지털 세상을 창조합니다 !
+                        <p class="contents-subtitle-1">
+                            기술과 예술이 만나는 곳,
+                        </p>
+                        <h1 class="contents-title">
+                            Department of <br>
+                            Multi media & Game
+                        </h1>
+                        <p class="contents-subtitle-2">
+                            저희는 디지털 세상을 창조합니다!
                         </p>
                     </div>
                     <div class="contents-section-1">
                         <div class="department-menu">
-                            <div class="department-submenu active" onclick="scrollDepartment(0)">
+                            <div class="department-submenu" onclick="scrollDepartment(0)">
                                 멀티미디어
                             </div>
-                            <div class="department-submenu" onclick="scrollDepartment(1)">
+                            <div class="department-submenu active" onclick="scrollDepartment(1)">
+                                &
+                            </div>
+                            <div class="department-submenu" onclick="scrollDepartment(2)">
                                 게임
                             </div>
                         </div>
                         <div class="department">
                             <div class="department-wrap">
                                 <span class="department-scroll">
-                                    <h1>멀티미디어</h1>
+                                    <h1>Multi media</h1>
                                     <p>
-                                        디지털 시대의 핵심은 콘텐츠입니다. 그리고 그 중심에는 시각, 청각, 영상,     인터랙션을 아우르는 멀티미디어 기술이 있습니다. <br>
-                                        멀티미디어 학과는 이러한 시대적 흐름에 발맞춰, 예술적 감성과 첨단 기술을 융합하여   새로운 디지털 콘텐츠를 창조하는 인재를 양성하는 학과입니다.
+                                        디지털 시대의 핵심은 콘텐츠이며, 그 중심에 멀티미디어 기술이 있습니다. <br>
+                                        멀티미디어 학과는 예술과 기술을 융합해 디지털 창작 역량을 기르는 공간입니다. <br>
+                                        영상, 디자인, 애니메이션, UI/UX 등 다양한 콘텐츠를 실무 중심으로 배우며, <br>
+                                        포트폴리오와 팀 프로젝트를 통해 실전 능력을 키웁니다. <br>
+                                        감성과 아이디어를 현실로 구현하는 디지털 크리에이터의 시작, 바로 여기서 출발합니다.
                                     </p>
+                                    <h1>Curriculum</h1>
                                     <p>
-                                        본 학과에서는 영상 제작, 그래픽 디자인, 애니메이션, 사운드 디자인, 인터랙티브   콘텐츠, UI/UX 디자인 등 다양한 분야를 실습 중심으로 배우며,<br>
-                                        학생들은 프로젝트 기반 수업을 통해 실제 산업 현장과 유사한 경험을 쌓아 나갑니다.
-                                    </p>
-                                    <p>
-                                        또한, 미디어 아트와 소프트웨어 기술의 융합을 통해 창의적인 아이디어를 실현하는  능력을 키우고, 팀 프로젝트와 포트폴리오 제작을 통해<br>
-                                        졸업 후 방송·영상 산업, 광고 디자인, 디지털 콘텐츠 개발, UI/UX 분야, IT 스타트업    등 다양한 진로로 나아갈 수 있도록 돕습니다.
-                                    </p>
-                                    <p>
-                                        멀티미디어 학과는 기술만을 배우는 곳이 아닙니다.<br>
-                                        이곳은 감성을 기술로, 아이디어를 현실로 구현하는 공간이며,<br>
-                                        디지털 시대의 예술가이자 창작자로서 성장하는 첫걸음이 되는 곳입니다.
-                                    </p>
-                                    <p>
-                                        당신의 상상을 빛과 소리, 영상과 코드로 구현해보세요.<br>
-                                        멀티미디어 학과는 그 여정을 함께할 준비가 되어 있습니다.
+                                        <table class="both-curriculum">
+                                            <tr class="table-header">
+                                                <td class="w10"></td>
+                                                <td></td>
+                                                <th class="w10">1학기</th>
+                                                <td></td>
+                                                <th class="w10">2학기</th>
+                                                <td></td>
+                                                <th class="w10">3학기</th>
+                                                <td></td>
+                                                <th class="w10">4학기</th>
+                                                <td></td>
+                                                <th class="w10">조기 학위취득</th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-body">
+                                                <th class="title">과목 내용</th>
+                                                <td></td>
+                                                <th>
+                                                    컴퓨터 개론 <br>
+                                                    멀티미디어 개론<br>
+                                                    2D그래픽 기초<br>
+                                                    컴퓨터프로그래밍<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    2D그래픽 심화<br>
+                                                    영상편집기초<br>
+                                                    웹디자인<br>
+                                                    컴퓨터통신 및 DB<br>
+                                                    컴퓨터프로그래밍2<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    UI/UX 디자인<br>
+                                                    영상편집심화1<br>
+                                                    웹프로그래밍1<br>
+                                                    컴퓨터프로그래밍3<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    디자인심화<br>
+                                                    영상편집심화2<br>
+                                                    웹프로그래밍2<br>
+                                                    모바일프로그래밍<br>
+                                                    포트폴리오<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    총 140학점 이수<br>
+                                                    전공 최소 60학점<br>
+                                                    교양 최소 30학점
+                                                </th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-footer">
+                                                <th>자격증</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득 <br> 독학사 학점 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
                                     </p>
                                 </span>
                                 <span class="department-scroll">
-                                    <h1>게임</h1>
+                                    <h1>Multi media & Game</h1>
                                     <p>
-                                        오늘날 게임은 단순한 오락을 넘어, 문화와 예술, 기술이 융합된 종합 콘텐츠 산업으로   자리 잡고 있습니다.<br>
-                                        게임학과는 이처럼 빠르게 진화하는 디지털 시대에 발맞춰, 창의적인 사고와 기술    역량을 겸비한 게임 전문가를 양성하는 학과입니다.
+                                        디지털 세대의 언어는 콘텐츠이며, 그 핵심은 창의력과 기술의 융합입니다. <br>
+                                        멀티미디어와 게임 분야는 감성과 상호작용을 통해 세상과 소통하는 미래 산업입니다. <br>
+                                        기획, 디자인, 영상, 인터랙션, 프로그래밍까지 전 과정을 실습하며 <br>
+                                        학생들은 실전 중심의 프로젝트와 포트폴리오를 통해 역량을 쌓습니다. <br>
+                                        아이디어를 현실로 구현하는 디지털 크리에이터의 여정, 여기서 시작됩니다. 
                                     </p>
+                                    <h1>Curriculum</h1>
                                     <p>
-                                        본 학과에서는 게임 기획, 그래픽 디자인, 2D·3D 애니메이션, 프로그래밍, 게임엔진  운용등
-                                        게임 제작의 전 과정을 실무 중심으로 교육합니다.<br>
-                                        학생들은 팀 프로젝트와 포트폴리오 제작을 통해 실제 게임 개발 프로세스를 경험하며,   산업 현장에서 바로 활용할 수 있는 실력을 갖추게 됩니다.
+                                        <table class="both-curriculum">
+                                            <tr class="table-header">
+                                                <td class="w10"></td>
+                                                <td></td>
+                                                <th class="w10">1학기</th>
+                                                <td></td>
+                                                <th class="w10">2학기</th>
+                                                <td></td>
+                                                <th class="w10">3학기</th>
+                                                <td></td>
+                                                <th class="w10">4학기</th>
+                                                <td></td>
+                                                <th class="w10">조기 학위취득</th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-body">
+                                                <th class="title">과목 내용</th>
+                                                <td></td>
+                                                <th>
+                                                    컴퓨터 개론 <br>
+                                                    멀티미디어 개론<br>
+                                                    2D그래픽 기초<br>
+                                                    컴퓨터프로그래밍<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    2D그래픽 심화<br>
+                                                    영상편집기초<br>
+                                                    웹디자인<br>
+                                                    컴퓨터통신 및 DB<br>
+                                                    컴퓨터프로그래밍2<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    UI/UX 디자인<br>
+                                                    영상편집심화1<br>
+                                                    웹프로그래밍1<br>
+                                                    컴퓨터프로그래밍3<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    디자인심화<br>
+                                                    영상편집심화2<br>
+                                                    웹프로그래밍2<br>
+                                                    모바일프로그래밍<br>
+                                                    포트폴리오<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    총 140학점 이수<br>
+                                                    전공 최소 60학점<br>
+                                                    교양 최소 30학점
+                                                </th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-footer">
+                                                <th>자격증</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득 <br> 독학사 학점 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
                                     </p>
+                                </span>
+                                <span class="department-scroll">
+                                    <h1>Game</h1>
                                     <p>
-                                        특히, 게임의 본질인 「재미」와 「몰입」을 설계하는 방법을 배우며, 동시에 사용자     경험(UX)과 인터랙션 설계까지 폭넓은 시각을 기릅니다.<br>
-                                        이를 통해 졸업 후에는 게임 개발사, 콘텐츠 기업, VR·AR 산업, 메타버스 기획 등    다양한 진로 분야에서 활약할 수 있습니다.
+                                        게임은 단순한 놀이를 넘어, 기술과 예술이 융합된 미래형 콘텐츠입니다. <br>
+                                        게임학과는 상상력을 현실로 구현하는 게임 창작 인재를 양성합니다. <br>
+                                        기획, 그래픽, 애니메이션, 프로그래밍 등 개발 전 과정을 실습 중심으로 배우며, <br>
+                                        팀 프로젝트와 포트폴리오를 통해 실무 역량을 키워갑니다. <br>
+                                        아이디어로 새로운 세상을 만드는 게임 크리에이터의 여정, 지금 여기서 시작됩니다.
                                     </p>
+                                    <h1>Curriculum</h1>
                                     <p>
-                                        게임학과는 단순히 코드를 배우는 곳이 아닙니다.<br>
-                                        이곳은 상상으로 세계를 만들고, 이야기로 사람을 움직이며, 기술로 그 세계를   구현하는 창조의 공간입니다.
-                                    </p>
-                                    <p>
-                                        게임을 좋아하나요? 그렇다면 이제는 직접 만드는 사람이 되어보세요. <br>
-                                        게임학과는 여러분의 아이디어가 현실이 되는 그 순간을 함께합니다.
+                                        <table class="both-curriculum">
+                                            <tr class="table-header">
+                                                <td class="w10"></td>
+                                                <td></td>
+                                                <th class="w10">1학기</th>
+                                                <td></td>
+                                                <th class="w10">2학기</th>
+                                                <td></td>
+                                                <th class="w10">3학기</th>
+                                                <td></td>
+                                                <th class="w10">4학기</th>
+                                                <td></td>
+                                                <th class="w10">조기 학위취득</th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-body">
+                                                <th class="title">과목 내용</th>
+                                                <td></td>
+                                                <th>
+                                                    컴퓨터 개론 <br>
+                                                    멀티미디어 개론<br>
+                                                    2D그래픽 기초<br>
+                                                    컴퓨터프로그래밍<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    2D그래픽 심화<br>
+                                                    영상편집기초<br>
+                                                    웹디자인<br>
+                                                    컴퓨터통신 및 DB<br>
+                                                    컴퓨터프로그래밍2<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    UI/UX 디자인<br>
+                                                    영상편집심화1<br>
+                                                    웹프로그래밍1<br>
+                                                    컴퓨터프로그래밍3<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    디자인심화<br>
+                                                    영상편집심화2<br>
+                                                    웹프로그래밍2<br>
+                                                    모바일프로그래밍<br>
+                                                    포트폴리오<br>
+                                                    기본교양
+                                                </th>
+                                                <td>▷</td>
+                                                <th>
+                                                    총 140학점 이수<br>
+                                                    전공 최소 60학점<br>
+                                                    교양 최소 30학점
+                                                </th>
+                                            </tr>
+                                            <tr class="table-gap"></tr>
+                                            <tr class="table-footer">
+                                                <th>자격증</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득 <br> 독학사 학점 취득</th>
+                                                <td></td>
+                                                <th>전공자격증 취득</th>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
                                     </p>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="main-contents WORKS">
+                <div class="main-contents WORKS hidden">
 
                 </div>
-                <div class="main-contents CONTACT">
+                <div class="main-contents CONTACT hidden">
 
                 </div>
             </div>

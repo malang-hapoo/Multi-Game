@@ -3,11 +3,14 @@
 }
 
 .INTRODUCE>.contents-header {
-    background-color: #111;
+    background-image: url(../src/images/bg_c.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
     color: #fff;
 
     width: 100%;
-    height: 500px;
+    height: 1000px;
 
     align-content: center;
     text-align: center;
@@ -16,13 +19,32 @@
 }
 
 .INTRODUCE>.contents-header>.contents-title {
-    font-size: 3.5em;
+    font-family: Georgia,
+        'Times New Roman',
+        Times,
+        serif;
+    font-size: 500%;
+    text-shadow: 0 0 3px #000;
+
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    
     margin: 0.5em;
 }
 
-.INTRODUCE>.contents-header>.contents-subtitle {
-    font-size: 1.5em;
+.INTRODUCE>.contents-header>.contents-subtitle-1 {
+    font-size: 2em;
     letter-spacing: 0.5em;
+    text-shadow: 0 0 3px #000;
+
+    translate: -7em 0em;
+}
+.INTRODUCE>.contents-header>.contents-subtitle-2 {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    text-shadow: 0 0 3px #000;
+    
+    translate: 5.5em 0em;
 }
 
 .INTRODUCE>.contents-section-1 {
@@ -30,26 +52,29 @@
     color: #fff;
 
     width: 100%;
-    height: 1100px;
+    height: 2000px;
     position: relative;
 }
 
 .INTRODUCE .department {
-    background-color: #555;
+    background-color: #eee;
+
+    margin: auto;
 
     width: 90%;
-    height: 900px;
+    max-width: 90em;
+    height: 1200px;
 
     overflow: hidden;
 
     position: relative;
-    left: 5%;
 }
 
 .INTRODUCE .department-wrap {
-    width: 200%;
+    width: 300%;
+    height: 100%;
     display: flex;
-    background-color: #ccc;
+    background-color: #eee;
 
     transition: 1s;
 }
@@ -62,21 +87,27 @@
 
     display: inline-block;
 
-    background-color: #ddd;
+    border: 1px solid #000;
+    background-color: #eee;
     color: #000;
 
     width: 100%;
-    height: 1000px;
     box-sizing: border-box;
 }
 
 .INTRODUCE .department-scroll>h1 {
+    font-family: Georgia,
+            'Times New Roman',
+            Times,
+            serif;
     font-size: 3em;
     margin: auto;
-    margin-top: -2em;
+    margin-top: 3em;
 }
 
 .INTRODUCE .department-scroll>p {
+    letter-spacing: 0.15em;
+    line-height: 2em;
     font-size: 1.5em;
     margin: 1.5em;
 }
@@ -85,26 +116,26 @@
     display: flex;
 
     position: relative;
-    left: 40%;
+    left: 35%;
 
-    width: 20%;
+    width: 30%;
     height: 150px;
 }
 
 .INTRODUCE .department-submenu {
     z-index: 2;
 
-    flex: 1 0 50%;
+    flex: 1;
 
+    
     color: #000;
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bold;
     text-align: center;
     align-content: center;
 
     position: relative;
     height: 80px;
-    min-width: 150px;
     top: 35px;
 
     transition: 1s;
@@ -113,13 +144,14 @@
 }
 
 .INTRODUCE .department-submenu::after {
+    z-index: 2;
     content: '';
 
     position: absolute;
     top: 70px;
     left: 5%;
 
-    width: 90%;
+    width: 105%;
     height: 5px;
 
     background-color: #ddd;
@@ -129,9 +161,66 @@
 }
 
 .INTRODUCE .department-submenu:hover::after {
+    z-index: 3;
     background-color: #999;
 }
 
 .INTRODUCE .department-submenu.active::after {
+    z-index: 4;
     background-color: #444;
+}
+
+.INTRODUCE table.both-curriculum {
+    width: 90%;
+    left: 5%;
+    position: relative;
+
+
+}
+
+.INTRODUCE table.both-curriculum .table-header {
+    height: 3em;
+}
+
+.INTRODUCE table.both-curriculum .table-header .w10 {
+    height: 3em;
+    width: 12em;
+}
+
+.INTRODUCE table.both-curriculum .table-header th {
+    width: 102em;
+    border-radius: 3em;
+    background-color: #399;
+    color: #eee;
+}
+
+.INTRODUCE table.both-curriculum .table-gap {
+    height: 2em;
+}
+
+.INTRODUCE table.both-curriculum .table-body {
+    height: 12em;
+}
+
+.INTRODUCE table.both-curriculum .table-body .title {
+    color: #000;
+    border: 3px solid #3aa;
+}
+
+.INTRODUCE table.both-curriculum .table-body th {
+    width: 12em;
+
+    font-size: 0.8em;
+
+    border-radius: 10em;
+    border: 1px solid #000;
+}
+.INTRODUCE table.both-curriculum .table-body td {
+    width: 1.5em;
+    font-size: 1.5em;
+}
+.INTRODUCE table.both-curriculum .table-footer th {
+    height: 3em;
+    border-radius: 3em;
+    border: 1px solid #000;
 }
