@@ -1,1 +1,4 @@
-# Multi-Game
+data 폴더 안에 파일들을 정리하고
+
+build_json.py를 실행시킨 후에 커밋  
+   ㄴ이부분은 나중에 자동으로 json 업데이트 하도록 변경
