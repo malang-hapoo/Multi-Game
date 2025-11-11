@@ -1,6 +1,4 @@
-// ==============================
-// 1️⃣ 갤러리 JSON 로드 & 생성
-// ==============================
+// json 파일 로드 html 출력
 async function loadGallery() {
     try {
         const res = await fetch("data/data_set.json");
@@ -61,9 +59,7 @@ async function loadGallery() {
     }
 }
 
-// ==============================
-// 2️⃣ 높이 전환 애니메이션 함수
-// ==============================
+// 애니메이션 함수
 function toggleHeight(element, minHeight) {
     const isActive = element.classList.contains("active");
 
@@ -89,9 +85,7 @@ function toggleHeight(element, minHeight) {
     }
 }
 
-// ==============================
-// 3️⃣ 클릭 이벤트 설정
-// ==============================
+// 클릭 이벤트
 function setupToggles() {
     document.querySelectorAll(".lecture-wrap > h3").forEach(title => {
         title.addEventListener("click", e => {
@@ -108,7 +102,5 @@ function setupToggles() {
     });
 }
 
-// ==============================
-// 4️⃣ 실행
-// ==============================
+// 로드
 document.addEventListener("DOMContentLoaded", loadGallery);
