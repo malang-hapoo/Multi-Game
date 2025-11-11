@@ -2,83 +2,108 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>과제 전시관</title>
+  <title>📚 과제 전시관 (로컬 버전)</title>
   <style>
     body {
-  font-family: 'Pretendard', sans-serif;
-  background: #f5f6f8;
-  margin: 0;
-  padding: 2rem;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.year-container {
-  margin: 2rem 0;
+      font-family: 'Pretendard', sans-serif;
+      background: #f5f6f8;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 { text-align: center; color: #333; }
+    .year-container h2 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+    }
+    .pdf-frame {
+      width: 100%;
+      height: 400px;
+      margin: 1rem 0;
+      border: none;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .year-container {
+  margin-bottom: 3rem;
   background: white;
   padding: 1rem 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.year-container h2 {
-  color: #007acc;
-  border-bottom: 2px solid #007acc;
-  padding-bottom: 0.5rem;
+.pdf-row {
+  display: flex;
+  flex-wrap: wrap;      /* 줄이 길면 자동 줄바꿈 */
+  gap: 2rem;            /* div끼리 간격 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.pdf-item {
+
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;         /* 각 박스 너비 */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.pdf-item p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .pdf-frame {
   width: 100%;
-  height: 400px;
-  margin: 1rem 0;
+  height: 300px;
   border: none;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
 }
   </style>
 </head>
 <body>
-  <h1>📚 과제 전시 사이트</h1>
+  <h1>📚 과제 전시 사이트 (Local)</h1>
   <div id="gallery"></div>
+
   <script>
-    const username = "YOUR_GITHUB_USERNAME";   // 👉 본인 깃허브 아이디로 변경
-const repo = "YOUR_REPO_NAME";             // 👉 저장소 이름으로 변경
-const baseUrl = `https://api.github.com/repos/${username}/${repo}/contents/data`;
+const structure = {
+  "2024": ["게임 기획서 (1).pdf", "게임 기획서 (1).pdf"],
+  "2025": ["게임 정리본.pdf", "게임 정리본.pdf"]
+};
 
-async function fetchFolderContents(url, year) {
-  const res = await fetch(url);
-  const files = await res.json();
+const gallery = document.getElementById("gallery");
 
+for (const year in structure) {
   const container = document.createElement("div");
   container.className = "year-container";
   container.innerHTML = `<h2>${year}</h2>`;
 
-  for (const file of files) {
-    if (file.name.endsWith(".pdf")) {
-      const iframe = document.createElement("iframe");
-      iframe.className = "pdf-frame";
-      iframe.src = file.download_url;
-      container.appendChild(iframe);
-    }
+  for (const file of structure[year]) {
+    // 묶음 div 생성
+    const pdfItem = document.createElement("div");
+    pdfItem.className = "pdf-item";
+
+    const p = document.createElement("p");
+    p.textContent = "📄 " + file;
+
+    const iframe = document.createElement("iframe");
+    iframe.className = "pdf-frame";
+    iframe.src = `data/${year}/${file}`;
+
+    // 두 요소를 pdf-item 안에 넣기
+    pdfItem.appendChild(p);
+    pdfItem.appendChild(iframe);
+
+    // 전체 container에 추가
+    container.appendChild(pdfItem);
   }
 
-  document.getElementById("gallery").appendChild(container);
+  gallery.appendChild(container);
 }
 
-async function init() {
-  const res = await fetch(baseUrl);
-  const folders = await res.json();
-
-  for (const folder of folders) {
-    if (folder.type === "dir" && /^[0-9]{4}$/.test(folder.name)) {
-      await fetchFolderContents(folder.url, folder.name);
-    }
-  }
-}
-
-init();
-  </script>
+</script>
 </body>
 </html>

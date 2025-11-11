@@ -24,14 +24,11 @@ function scrollDepartment(index) {
     const wrap = document.querySelector('.department-wrap');
     const menus = document.querySelectorAll('.department-submenu');
 
-    // 슬라이드 이동
     wrap.style.transform = `translateX(-${index * 33.333}%)`;
 
-    // 메뉴 active 상태 표시
     menus.forEach(menu => menu.classList.remove('active'));
     menus[index].classList.add('active');
 
-    // 현재 인덱스 갱신
     scrolltIndex = index;
 }
 
