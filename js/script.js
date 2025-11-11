@@ -40,3 +40,15 @@ function scrollDistanceDelay(distance,second) {
         window.scrollTo({top: distance, behavior:'smooth'})
     }, delay);
 }
+
+// WORKS 
+const boxes = document.querySelectorAll('.content-box');
+
+boxes.forEach(box => {
+    box.addEventListener('click', () => {
+        boxes.forEach(b => b.classList.remove('active')); // 기존 active 모두 해제
+        box.classList.add('active'); // 클릭한 박스만 active
+    });
+});
+
+

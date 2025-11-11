@@ -64,7 +64,7 @@
 
     width: 90%;
     max-width: 90em;
-    height: 1000px;
+    height: 1100px;
 
     overflow: hidden;
 
@@ -107,7 +107,7 @@
 .INTRODUCE .department-scroll>p {
     letter-spacing: 0.15em;
     line-height: 2em;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 1.5em;
 }
 
@@ -397,7 +397,7 @@
     border-bottom: 3px solid #000;
 
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
 
 }
 
@@ -447,7 +447,7 @@
 
     margin: 1em;
 
-    font-size: 2em;
+    font-size: 2.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2em
 }
@@ -455,7 +455,7 @@
 .INTRODUCE .career>p {
     color: #000;
 
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2em;
     line-height: 2em;

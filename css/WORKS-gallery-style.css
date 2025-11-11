@@ -1,0 +1,127 @@
+.WORKS .contents-section-2 .gallery {
+  padding: 2rem;
+  background: #eee;
+  font-family: "Do Hyeon", sans-serif;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.WORKS .contents-section-2 .year-container {
+    margin: auto;
+    max-width: 130em;
+    height: 100px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    transition: 1s;
+}
+
+.WORKS .contents-section-2 .year-container.active {
+    height: auto;
+    transition: 1s;
+}
+
+.WORKS .contents-section-2 .year-container h2 {
+    text-align: center;
+    font-size: 2.7em;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.WORKS .contents-section-2 .year-container:nth-child(2n-1) h2 {
+  color: #4cc;
+  border-bottom: 2px solid #4cc;
+}
+
+.WORKS .contents-section-2 .year-container:nth-child(2n) h2 {
+    color: #66f;
+    border-bottom: 2px solid #66f;
+}
+
+.WORKS .contents-section-2 .lecture-wrap {
+    height: 55px;
+    overflow: hidden;
+    grid-template-columns: auto;
+    margin-bottom: 2rem;
+    padding: 0.5em;
+    background: #333;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.WORKS .contents-section-2 .lecture-wrap.active {
+    max-height: fit-content;
+}
+
+.WORKS .contents-section-2 .lecture-wrap h3 {
+    text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.WORKS .contents-section-2 .lecture-contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: 1s;
+}
+
+
+.WORKS .contents-section-2 .content-box {
+    margin: auto;
+    padding: 1rem;
+
+    width: 40em;
+    aspect-ratio: 2 / 2.5;
+
+    border-radius: 8px;
+    background: #bdd;
+
+    
+    transition: 1s;
+
+    z-index: 5;
+
+    cursor: pointer;
+}
+
+.WORKS .contents-section-2 .content-box a {
+    display: block;
+
+    color: #333;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.4s;
+}
+
+.WORKS .contents-section-2 .content-box a:hover {
+    color: #a6a;
+}
+
+.WORKS .contents-section-2 .content-box.active {
+    width: 95%;
+    height: 1000px;
+    transform: none;
+}
+
+.WORKS .contents-section-2 .content-box p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.WORKS .contents-section-2 .item-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: none;
+}
