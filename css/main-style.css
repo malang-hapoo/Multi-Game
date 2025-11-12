@@ -93,21 +93,18 @@ body {
 }
 
 .ssu-logo {
-    width: 130px;
-    max-width: 80%;
-    height: 40px;
+    aspect-ratio: 3/2;
+    height: 80px;
 }
 
 .ssugli-logo {
-    width: 100px;
-    max-width: 80%;
-    height: 40px;
+    aspect-ratio: 2/2;
+    height: 80px;
 }
 
 .multi-game-logo {
-    width: 230px;
-    max-width: 80%;
-    height: 40px;
+    aspect-ratio: 5/2;
+    height: 80px;
 
 }
 
