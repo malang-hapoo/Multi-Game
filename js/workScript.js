@@ -9,6 +9,7 @@ async function loadGallery() {
         for (const year in structure) {
             const yearContainer = document.createElement("div");
             yearContainer.className = "year-container";
+            yearContainer.className += " active"; 
 
             const yearTitle = document.createElement("h2");
             yearTitle.textContent = year + "";
@@ -55,7 +56,7 @@ async function loadGallery() {
         setupToggles();
 
     } catch (err) {
-        console.error("⚠️ data_set.json 로드 실패:", err);
+        console.error("data_set.json 로드 실패:", err);
     }
 }
 
