@@ -15,13 +15,13 @@ for year in sorted(os.listdir(base_dir)):
 
     result[year] = {}
 
-    # 2차 폴더 (예: 게임 기획 / 게임 제작)
+    # 2차 폴더 (과목별)
     for folder in sorted(os.listdir(year_path)):
         folder_path = os.path.join(year_path, folder)
         if not os.path.isdir(folder_path):
             continue
 
-        # 파일 목록 수집 (모든 파일)
+        # 파일 목록 수집 (과제 파일)
         files = sorted([
             f for f in os.listdir(folder_path)
             if os.path.isfile(os.path.join(folder_path, f))
