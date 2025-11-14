@@ -52,7 +52,6 @@ async function loadGallery() {
             gallery.appendChild(yearContainer);
         }
 
-        // 갤러리를 다 만든 후 토글 기능 설정
         setupToggles();
 
     } catch (err) {

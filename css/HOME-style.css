@@ -1,6 +1,5 @@
 .main-contents.HOME {
-    background: #222;
-    height: 3800px;
+    background: #eee;
 }
 
 .HOME>.contents-header {
@@ -11,7 +10,7 @@
     color: #fff;
 
     width: 100%;
-    height: 1200px;
+    height: 1000px;
 
     align-content: center;
     text-align: center;
@@ -48,7 +47,7 @@
     color: #fff;
 
     width: 100%;
-    height: 1300px;
+    height: 1000px;
 
     align-content: center;
     text-align: center;
@@ -101,7 +100,7 @@
     color: #fff;
 
     width: 100%;
-    height: 1300px;
+    height: 1000px;
 
     align-content: center;
     text-align: center;
