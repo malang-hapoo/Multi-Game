@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.license {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: sans-serif;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        table.license tr {
+            height: 3.5em;
+        }
+
+        table.license tr:first-child {
+            background-color: #ddd;
+        }
+
+        table.license tr:first-child, tr:last-child {
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+        }
+    
+        table.license th,
+        table.license td {
+            width: 3em;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    
+        table.license .no-left {
+            border-left: 0px solid #000;
+        }
+        
+        table.license .no-right {
+            border-right: 0px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <table class="license">
+        <tr>
+            <th class="no-left">구분</th>
+            <th>자격증명</th>
+            <th class="no-right">취득학점</th>
+        </tr>
+        <tr>
+            <td class="no-left" rowspan="6">전공</td>
+            <td>네트워크관리사 2급</td>
+            <td class="no-right">14학점</td>
+        </tr>
+        <tr>
+            <td>정보처리기사 / 정보처리산업기사</td>
+            <td class="no-right">20학점 / 16학점</td>
+        </tr>
+        <tr>
+            <td>컴퓨터활용능력 1급 / 2급</td>
+            <td class="no-right">14학점 / 6학점</td>
+        </tr>
+        <tr>
+            <td>사무자동화산업기사</td>
+            <td class="no-right">16학점</td>
+        </tr>
+        <tr>
+            <td>게임프로그래밍전문가</td>
+            <td class="no-right">20학점</td>
+        </tr>
+        <tr>
+            <td>멀티미디어콘텐츠제작전문가</td>
+            <td class="no-right">18학점</td>
+        </tr>
+        <tr>
+            <td class="no-left">일반</td>
+            <td>전자계산기제어산업기사</td>
+            <td class="no-right">16학점</td>
+        </tr>
+    </table>
+</body>
+</html>

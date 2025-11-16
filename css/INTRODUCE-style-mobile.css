@@ -6,12 +6,12 @@
 .INTRODUCE>.contents-header {
     background-image: url(../src/images/bg_c.png);
     background-size: cover;
-    background-position-x: center;
+    background-position-x: left;
     background-position-y: bottom;
     color: #fff;
 
     width: 100%;
-    height: 1000px;
+    height: 110em;
 
     align-content: center;
     text-align: center;
@@ -20,16 +20,13 @@
 }
 
 .INTRODUCE>.contents-header>.contents-title {
-    font-family: Georgia,
-        'Times New Roman',
-        Times,
-        serif;
-    font-size: 500%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.3em;
     text-shadow: 0 0 3px #000;
 
     letter-spacing: 0.1em;
     line-height: 1.5em;
-    
+    text-align: center;
     margin: 0.5em;
 }
 
@@ -37,15 +34,11 @@
     font-size: 2em;
     letter-spacing: 0.5em;
     text-shadow: 0 0 3px #000;
-
-    translate: -7em 0em;
 }
 .INTRODUCE>.contents-header>.contents-subtitle-2 {
     font-size: 2em;
     letter-spacing: 0.5em;
     text-shadow: 0 0 3px #000;
-    
-    translate: 5.5em 0em;
 }
 
 .INTRO-section-1 {
@@ -62,7 +55,7 @@
 }
 
 .INTRO-section-1 > h1 {
-    padding: 1em;
+    padding: 0.5em;
 
     text-align: center;
     font-size: 3em;
@@ -71,7 +64,7 @@
 
 .INTRO-section-1 > p {
     margin: auto;
-    padding: 1em;
+    padding: 0.5em;
 
     text-align: center;
     font-size: 1.5em;
@@ -91,7 +84,7 @@
 
     color: #000;
 
-    width: 60em;
+    width: 50em;
 }
 
 .department-content {
@@ -117,7 +110,7 @@
 
 .department-content:hover {
     flex-grow: 15;
-    height: 300px;
+    height: 12em;
 }
 .INTRO-departments:hover .department-content {
     width: 100%;
@@ -130,7 +123,7 @@
 .department-content p {
     opacity: 0;
 
-    padding: 1em;
+    padding: 0.5em;
 
     line-height: 2em;
     font-size: 0.8em;
@@ -154,7 +147,7 @@
 
     color: #000;
 
-    width: 80em;
+    width: 50em;
 }
 
 .INTRO-main-content {
@@ -180,11 +173,11 @@
 
 .INTRO-main-content:hover {
     flex-grow: 15;
-    height: 500px;
+    height: 20em;
 }
 .INTRO-main-content:hover:last-child {
     flex-grow: 15;
-    height: 800px;
+    height: 45em;
 }
 
 .INTRO-contents:hover .INTRO-main-content {
@@ -198,10 +191,10 @@
 table.curriculum {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 20px 10px;
+    border-spacing: 0.5em 0.25em;
     font-family: sans-serif;
     text-align: center;
-    margin: 20px 0;
+    margin: 1em 0;
 }
 
 .term {
@@ -215,20 +208,19 @@ table.curriculum {
 .circle-box {
     border: 2px solid #026;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 7em;
+    height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 10px;
 }
 
 .circle-box ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 0.33em;
 }
 
 .circle-box li {

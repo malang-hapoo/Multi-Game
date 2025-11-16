@@ -90,14 +90,14 @@ function setupToggles() {
     document.querySelectorAll(".lecture-wrap > h3").forEach(title => {
         title.addEventListener("click", e => {
             const wrap = e.target.closest(".lecture-wrap");
-            toggleHeight(wrap, "55px");
+            toggleHeight(wrap, "4em");
         });
     });
 
     document.querySelectorAll(".year-container > h2").forEach(title => {
         title.addEventListener("click", e => {
             const container = e.target.closest(".year-container");
-            toggleHeight(container, "100px");
+            toggleHeight(container, "7em");
         });
     });
 }
