@@ -143,3 +143,54 @@ main {
 .main-contents.hidden {
     display: none;
 }
+
+footer {
+    width: 100%;
+    height: 20em;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.6em;
+}
+
+.footer-head {
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+
+.footer-contents {
+    flex: 1;
+    height: 17em;
+    padding: 2em;
+}
+
+.footer-contents.a,
+.footer-contents.d {
+    flex: 2;
+}
+
+.footer-contents p {
+    margin: 1em;
+}
+
+.footer-contents img {
+    margin: auto;
+}
+
+footer hr {
+    border: 0.05em solid #fff;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.footer-contents a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.footer-footer {
+    flex: 1 1 100%;
+    text-align: right;
+    padding: 1em;
+}
