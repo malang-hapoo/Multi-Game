@@ -47,6 +47,13 @@ body {
     font-weight: bold;
 }
 
+.menu a {
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .submenu {
     position: relative;
 
