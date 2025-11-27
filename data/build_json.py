@@ -33,5 +33,5 @@ for year in sorted(os.listdir(base_dir)):
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
-print("✅ data_set.json 생성 완료!")
-print(f"📄 경로: {output_file}")
+print("data_set.json 생성 완료!")
+print(f"경로: {output_file}")
