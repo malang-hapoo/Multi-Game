@@ -155,14 +155,14 @@ main {
 footer {
     width: 100%;
     height: auto;
-    background-color: #111;
+    background-color: #222;
     color: #fff;
     font-size: 0.2em;
 }
 
 .footer-head {
     width: 100%;
-    background-color: #111;
+    background-color: #222;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
