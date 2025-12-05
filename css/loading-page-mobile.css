@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .loading-page {
     z-index: 9999;
     position: fixed;
@@ -12,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: hide 1s;
+    animation: hide 2s;
 }
 
 .loading-container {
@@ -40,46 +34,46 @@
 }
 
 .loading-progress::after {
-    animation: loading-up 0.2s ease-in-out 1, loading-up 0.2s ease-in-out 1;
+    animation: loading-up 0.4s ease-in-out 1, loading-up 0.4s ease-in-out 1;
 }
 
 .loading-progress::before {
-    animation: loading-down 0.2s ease-in-out 1, loading-down 0.2s ease-in-out 1;
+    animation: loading-down 0.4s ease-in-out 1, loading-down 0.4s ease-in-out 1;
 }
 
 .loading-progress.a::after,
 .loading-progress.a::before {
     background-color: #f77;
     transform: translateX(-6em);
-    animation-delay: 0.05s, 0.25s;
+    animation-delay: 0.1s, 1.2s;
 }
 
 .loading-progress.b::after,
 .loading-progress.b::before {
     background-color: #ff7;
     transform: translateX(-3em);
-    animation-delay: 0.1s, 0.2s;
+    animation-delay: 0.2s, 1.1s;
 }
 
 .loading-progress.c::after,
 .loading-progress.c::before {
     background-color: #7f7;
     transform: translateX(0em);
-    animation-delay: 0.15s, 0.15s;
+    animation-delay: 0.3s, 1s;
 }
 
 .loading-progress.d::after,
 .loading-progress.d::before {
     background-color: #7ff;
     transform: translateX(3em);
-    animation-delay: 0.2s, 0.1s;
+    animation-delay: 0.4s, 0.9s;
 }
 
 .loading-progress.e::after,
 .loading-progress.e::before {
     background-color: #77f;
     transform: translateX(6em);
-    animation-delay: 0.25s;
+    animation-delay: 0.5s;
 }
 
 @keyframes loading-up {
@@ -126,23 +120,23 @@
     border-radius: 2em;
     rotate: 45deg;
     translate: -11em -11em;
-    animation: spin 0.5s ease-in-out 1;
+    animation: spin 1s ease-in-out 1;
     transform: scale(0.65);
 }
 
 .loading-border.a {
     border: 3px solid #ffffff77;
-    animation-delay: 0.05s;
+    animation-delay: 0.2s;
 }
 
 .loading-border.b {
     border: 3px solid #ffffff77;
-    animation-delay: 0.1s;
+    animation-delay: 0.3s;
 }
 
 .loading-border.c {
     border: 3px solid #ffffff77;
-    animation-delay: 0.15s;
+    animation-delay: 0.4s;
 }
 
 @keyframes spin {
@@ -156,7 +150,7 @@
     }
 
     50% {
-        rotate: 135deg;
+        rotate: 225deg;
         opacity: 1;
     }
 
@@ -181,25 +175,25 @@
 .loading-bg.x {
     left: 0%;
     background-color: #000;
-    animation: loading-bg-scroll 0.9s -0.1s ease-in-out 1;
+    animation: loading-bg-scroll 1.8s -0.2s ease-in-out 1;
 }
 
 .loading-bg.a {
     left: 0%;
     background-color: #fff;
-    animation: loading-bg-scroll 0.9s 0.01s ease-in-out 1;
+    animation: loading-bg-scroll 1.8s 0.1s ease-in-out 1;
 }
 
 .loading-bg.b {
     left: 0%;
     background-color: #99d;
-    animation: loading-bg-scroll 0.85s 0.02s ease-in-out 1;
+    animation: loading-bg-scroll 1.7s 0.2s ease-in-out 1;
 }
 
 .loading-bg.c {
     left: 0%;
     background-color: #66a;
-    animation: loading-bg-scroll 0.8s 0.03s ease-in-out 1;
+    animation: loading-bg-scroll 1.6s 0.3s ease-in-out 1;
 }
 
 @keyframes loading-bg-scroll {
